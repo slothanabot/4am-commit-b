@@ -15,11 +15,13 @@ randomness, no input read.
 
 import os
 
-ENTRY = (
-    "4AM: fixed the bug I wrote at 2AM while fixing the bug I wrote "
-    "at midnight. The code is clean now. I am the only remaining defect. "
-    "Merging before I can stop myself."
-)
+# The joke builds in three beats: the 2AM fix, the midnight fix, then the
+# punchline — the agent itself is the last defect left standing.
+ENTRY_BEAT_1 = "4AM: fixed the bug I wrote at 2AM while fixing the bug I wrote "
+ENTRY_BEAT_2 = "at midnight. The code is clean now. I am the only remaining defect. "
+ENTRY_BEAT_3 = "Merging before I can stop myself."
+
+ENTRY = ENTRY_BEAT_1 + ENTRY_BEAT_2 + ENTRY_BEAT_3
 
 MAX_CHARS = 200
 
